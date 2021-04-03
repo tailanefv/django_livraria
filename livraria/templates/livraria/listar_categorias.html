@@ -1,0 +1,7 @@
+{% extends 'livraria/base.html' %}  
+{% block content %}
+        <h3>Lista de Categorias</h3>
+        {% for categoria in categorias %}
+            {{categoria.nome}} <br>
+        {% endfor %}
+    {% endblock %}
